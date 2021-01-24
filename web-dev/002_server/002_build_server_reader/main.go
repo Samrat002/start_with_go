@@ -18,7 +18,7 @@ func handle(conn net.Conn){
 }
 
 func main() {
-	listener, err := net.Listen("tcp", ":8080")
+	listener, err := net.Listen("tcp", "localhost:8080")
 	if err!=nil{
 		log.Panic(err)
 	}
