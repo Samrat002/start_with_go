@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>
+    First Html template with golang
+</title>
+
+<head>
+    {{range .}}
+        {{.AcaYear}}
+        {{.Fall.Term}}
+            {{range .Fall.Courses}}
+                {{.Number}} = {{.Name}} = {{.Units}}
+            {{end}}
+        {{.Spring.Term}}
+            {{range .Spring.Courses}}
+                {{.Number}} = {{.Name}} = {{.Units}}
+            {{end}}
+    {{end}}
+</head>
+<body>
+</body>
+</html>

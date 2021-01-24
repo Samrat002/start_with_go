@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>
+    First Html template with golang
+</title>
+
+<head>
+
+</head>
+<body>
+Rendering data for the hotels !!!!
+    {{ range .}}
+        {{.Name}} = {{.Address}} = {{.City}} = {{.Zip}} = {{.Region}}
+    {{end}}
+</body>
+</html>

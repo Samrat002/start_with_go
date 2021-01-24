@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>
+    First Html template with golang
+</title>
+
+<head>
+
+</head>
+<body>
+    {{ range .Breakfast}}
+        {{.Name}} = {{.FoodType}} = {{.Price}}
+    {{end}}
+    {{ range .Lunch}}
+        {{.Name}} = {{.FoodType}} = {{.Price}}
+    {{end}}
+    {{ range .Dinner}}
+        {{.Name}} = {{.FoodType}} = {{.Price}}
+    {{end}}
+</body>
+</html>
